@@ -10,14 +10,30 @@
     <title>bsdemo</title>
 
     <link href="./css/bootstrap.min.css" rel="stylesheet">
-    <link href="./css/main.css" rel="stylesheet">
+<style type="text/css">
 
+div.row {
+  border-style: solid;
+  border-width:1px;
+	margin-bottom:20px;
+  background-color:#CECECE;
+}
+
+div.row  div{
+  border-style: solid;
+  border-width:1px;
+}
+
+
+
+</style>
 
   </head>
 
   <body>
 
   <div class="container">
+  堆叠与列宽无关，是由列类型决定的
 		<div class="row">
 		  <div class="col-md-1">.col-md-1</div>
 		  <div class="col-md-1">.col-md-1</div>
@@ -45,6 +61,67 @@
 		  <div class="col-md-6">.col-md-6</div>
 		  <div class="col-md-6">.col-md-6</div>
 		</div>
+		
+		当配置了多种类型的列时，根据设备宽度自动决定对应的列类型起作用
+	<!-- Stack the columns on mobile by making one full-width and the other half-width -->
+	<div class="row">
+	  <div class="col-xs-12 col-md-8">.col-xs-12 .col-md-8</div>
+	  <div class="col-xs-4 col-md-4">.col-xs-6 .col-md-4</div>
+	</div>
+	
+	<!-- Columns start at 50% wide on mobile and bump up to 33.3% wide on desktop -->
+	<div class="row">
+	  <div class="col-xs-6 col-md-4">.col-xs-6 .col-md-4</div>
+	  <div class="col-xs-6 col-md-4">.col-xs-6 .col-md-4</div>
+	  <div class="col-xs-6 col-md-4">.col-xs-6 .col-md-4</div>
+	</div>
+	<!-- Columns are always 50% wide, on mobile and desktop -->
+	<div class="row">
+	  <div class="col-xs-6">.col-xs-6</div>
+	  <div class="col-xs-6">.col-xs-6</div>
+	</div>		
+		
+		
+<div class="row">
+  <div class="col-xs-12 col-sm-6 col-md-8">.col-xs-12 .col-sm-6 .col-md-8</div>
+  <div class="col-xs-6 col-md-4">.col-xs-6 .col-md-4</div>
+</div>
+<div class="row">
+  <div class="col-xs-6 col-sm-4">.col-xs-6 .col-sm-4</div>
+  <div class="col-xs-6 col-sm-4">.col-xs-6 .col-sm-4</div>
+  <!-- Optional: clear the XS cols if their content doesn't match in height -->
+  <div class="clearfix visible-xs-block">clear the XS cols if their content doesn't match in height</div>
+  <div class="col-xs-6 col-sm-4">.col-xs-6 .col-sm-4</div>
+</div>		
+		
+		超过12列时整体换行
+<div class="row">
+  <div class="col-xs-9">.col-xs-9</div>
+  <div class="col-xs-4">.col-xs-4<br>Since 9 + 4 = 13 &gt; 12, this 4-column-wide div gets wrapped onto a new line as one contiguous unit.</div>
+  <div class="col-xs-6">.col-xs-6<br>Subsequent columns continue along the new line.</div>
+</div>		
+		
+		嵌套列
+<div class="row">
+  <div class="col-sm-9">
+    Level 1: .col-sm-9
+    <div class="row">
+      <div class="col-xs-8 col-sm-6">
+        Level 2: .col-xs-8 .col-sm-6
+      </div>
+      <div class="col-xs-4 col-sm-6">
+        Level 2: .col-xs-4 .col-sm-6
+      </div>
+    </div>
+  </div>
+</div>		
+		
+		列的移位
+<div class="row">
+  <div class="col-md-9 col-md-push-3">.col-md-9 .col-md-push-3</div>
+  <div class="col-md-3 col-md-pull-9">.col-md-3 .col-md-pull-9</div>
+</div>	
+		
 </div>
     <script src="./dist/js/bootstrap.min.js"></script>
   </body>
