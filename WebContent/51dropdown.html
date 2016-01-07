@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="author" content="">
+
+<title>bsdemo</title>
+
+<link href="./css/bootstrap.min.css" rel="stylesheet">
+
+<style type="text/css">
+.container {
+	
+}
+
+div.row {
+	border-style: solid;
+	border-width: 1px;
+	/* margin-bottom:20px; */
+	/* background-color:#CECECE; */
+	padding: 30px 0;
+}
+
+div.row  div {
+/* 	border-style: solid;
+	border-width: 1px; */
+}
+
+
+body { 
+
+padding-top: 70px; 
+padding-bottom: 70px;
+
+}
+</style>
+
+</head>
+
+<body>
+
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+			
+			<h1>dropdown</h1>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-12">
+			
+
+
+
+
+			</div>			
+
+		</div>
+
+
+		<div class="row">
+			<div class="col-md-4">
+				<div class="dropdown open">
+				  <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+				    Dropdown
+				    <span class="caret"></span>
+				  </button>
+				  <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+				    <li><a href="#">Action</a></li>
+				    <li><a href="#">Another action</a></li>
+				    <li><a href="#">Something else here</a></li>
+				    <li role="separator" class="divider"></li>
+				    <li><a href="#">Separated link</a></li>
+				  </ul>
+				</div>
+
+				
+			</div>
+			<div class="col-md-4">
+				<div class="dropup">
+				  <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+				    Dropup
+				    <span class="caret"></span>
+				  </button>
+				  <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
+				    <li><a href="#">Action</a></li>
+				    <li><a href="#">Another action</a></li>
+				    <li><a href="#">Something else here</a></li>
+				    <li role="separator" class="divider"></li>
+				    <li><a href="#">Separated link</a></li>
+				  </ul>
+				</div>
+
+			</div>
+			<div class="col-md-4">
+				<div class="dropdown">
+				  <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+				    Dropdown
+				    <span class="caret"></span>
+				  </button>
+				  <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenu1">
+				    <li><a href="#">Action</a></li>
+				     <li class="dropdown-header">Dropdown header</li>
+				    <li class="disabled"><a href="#">Another action</a></li>
+				    <li><a href="#">Something else here</a></li>
+				    <li role="separator" class="divider"></li>
+				    <li><a href="#">Separated link</a></li>
+				  </ul>
+				</div>
+			</div>			
+
+		</div>
+
+				<div class="row">
+			<div class="col-md-4">
+				<div class="dropdown">
+				 <a id="dLabel" class="btn btn-default dropdown-toggle" data-target="#" href="http://www.google.com" 
+				 data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+				    Dropdown trigger on a
+				    <span class="caret"></span>
+				  </a>
+				  <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+				    <li><a href="#">Action</a></li>
+				    <li><a href="#">Another action</a></li>
+				    <li><a href="#">Something else here</a></li>
+				    <li role="separator" class="divider"></li>
+				    <li><a href="#">Separated link</a></li>
+				  </ul>
+				</div>
+			
+			</div>
+			<div class="col-md-4">
+				<div class="dropdown">
+				 <div id="dLabel" class="btn btn-default dropdown-toggle" data-target="#" 
+				 data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+				    Dropdown trigger on div
+				    <span class="caret"></span>
+				  </div>
+				  <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+				    <li><a href="#">Action</a></li>
+				    <li><a href="#">Another action</a></li>
+				    <li><a href="#">Something else here</a></li>
+				    <li role="separator" class="divider"></li>
+				    <li><a href="#">Separated link</a></li>
+				  </ul>
+				</div>
+			</div>			
+			<div class="col-md-4">
+				<div id="dLabel" class="btn btn-default dropdown-toggle" data-target="#test" 
+				 data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+				    Dropdown trigger outside dropdown div
+				    <span class="caret"></span>
+				</div>
+				<div class="dropdown"  id="test">
+				  <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+				    <li><a href="#">Action</a></li>
+				    <li><a href="#">Another action</a></li>
+				    <li><a href="#">Something else here</a></li>
+				    <li role="separator" class="divider"></li>
+				    <li><a href="#">Separated link</a></li>
+				  </ul>
+				</div>
+
+
+			</div>
+		</div>
+				<div class="row">
+			<div class="col-md-4">
+			
+ 				<div class="dropdown">
+				 <div  class="btn btn-default dropdown-toggle" data-target="#" 
+				 data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+				    test4js
+				    <span class="caret"></span>
+				  </div>
+				  <ul  class="dropdown-menu" aria-labelledby="dropdownMenu1">
+				    <li><a href="#">Action</a></li>
+				    <li><a href="#">Another action</a></li>
+				    <li><a href="#">Something else here</a></li>
+				    <li role="separator" class="divider"></li>
+				    <li><a href="#">Separated link</a></li>
+				  </ul>
+				</div>
+ 		
+			
+			</div>
+			
+			
+			
+			
+			
+			<div class="col-md-4">
+		        <button type="button" class="btn btn-primary t3toggle1" >toggle1 on button</button>
+		        <button type="button" class="btn btn-primary t3toggle2" >toggle2 on dropdown element</button>
+		        <button type="button" class="btn btn-primary t3toggle3" >toggle3 on dropdown element</button>
+		        <button type="button" class="btn btn-primary t3toggle4" >toggle4 on dropdown element</button>
+			</div>			
+			<div id="test4js3" class="col-md-4">
+				<div class="dropdown" id="test4js4">
+				  <button id="test4js2" class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+				    Dropdown
+				    <span class="caret"></span>
+				  </button>
+				  <ul id="test4js1" class="dropdown-menu" aria-labelledby="dropdownMenu1">
+				    <li><a href="#">Action</a></li>
+				     <li class="dropdown-header">Dropdown header</li>
+				    <li class="disabled"><a href="#">Another action</a></li>
+				    <li><a href="#">Something else here</a></li>
+				    <li role="separator" class="divider"></li>
+				    <li><a href="#">Separated link</a></li>
+				  </ul>
+				</div>
+			
+			
+			</div>
+		</div>
+				<div class="row">
+			<div class="col-md-4">
+
+			
+			</div>
+			<div class="col-md-4">
+
+			</div>			
+			<div class="col-md-4">
+
+			
+			
+			</div>
+		</div>
+				<div class="row">
+			<div class="col-md-4">
+
+			
+			</div>
+			<div class="col-md-4">
+
+			</div>			
+			<div class="col-md-4">
+
+			
+			
+			</div>
+		</div>
+				<div class="row">
+			<div class="col-md-4">
+
+			
+			</div>
+			<div class="col-md-4">
+
+			</div>			
+			<div class="col-md-4">
+
+			
+			
+			</div>
+		</div>
+				<div class="row">
+			<div class="col-md-4">
+
+			
+			</div>
+			<div class="col-md-4">
+
+			</div>			
+			<div class="col-md-4">
+
+			
+			
+			</div>
+		</div>
+				<div class="row">
+			<div class="col-md-4">
+
+			
+			</div>
+			<div class="col-md-4">
+
+			</div>			
+			<div class="col-md-4">
+
+			
+			
+			</div>
+		</div>
+				<div class="row">
+			<div class="col-md-4">
+
+			
+			</div>
+			<div class="col-md-4">
+
+			</div>			
+			<div class="col-md-4">
+
+			
+			
+			</div>
+		</div>
+
+	</div>
+	
+		<script src="./js/jquery-1.11.3.js"></script>
+		<script src="./js/bootstrap.min.js"></script>
+		
+		<script type="text/javascript">
+
+		$(document).ready(function(){
+			console.info('this is $(document).ready ')
+			//$('#test4js').dropdown()
+			$('#test4js2').dropdown('toggle');
+			
+		});
+		
+		
+		$(function(){
+			console.info('this is $(function(){});');
+			
+		});
+
+		
+		
+		
+		//even must be linked to parent element
+		$('#test4js3').on('hide.bs.dropdown', function (e) {
+				console.info('this is hide.bs.dropdown event')
+		})	
+		
+		$('#test4js3').on('hidden.bs.dropdown', function (e) {
+				console.info('this is hidden.bs.dropdown event')
+		})
+		
+		$('#test4js3').on('show.bs.dropdown', function (e) {
+				console.info('this is show.bs.dropdown event')
+		})
+		
+		$('#test4js3').on('shown.bs.dropdown', function (e) {
+				console.info('this is shown.bs.dropdown event')
+		})			
+		
+
+		$('.t3toggle1').on('click', function (e) {
+			e.stopPropagation();//must add this if in event handle
+ 				$('#test4js1').dropdown('toggle');
+ 				console.info('this is t3toggle1 click event');
+		});
+		
+		$('.t3toggle2').on('click', function (e) {
+			e.stopPropagation();
+ 				$('#test4js2').dropdown('toggle');
+ 				console.info('this is t3toggle2 click event');
+		});			
+			
+		
+		$('.t3toggle3').on('click', function (e) {
+			e.stopPropagation();
+ 				$('#test4js3').dropdown('toggle');
+ 				console.info('this is t3toggle3 click event');
+		});	
+		
+		$('.t3toggle4').on('click', function (e) {
+			e.stopPropagation();
+ 				$('#test4js4').dropdown('toggle');
+ 				console.info('this is t3toggle4 click event');
+		});			
+
+			
+		</script>
+		
+</body>
+</html>

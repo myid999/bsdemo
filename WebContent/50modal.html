@@ -217,7 +217,44 @@ padding-bottom: 70px;
 		</div>
 				<div class="row">
 			<div class="col-md-4">
-
+ 
+ 		<button id='t3init' type="button" class="btn btn-primary" >init</button>
+<!--         <button id='t3toggle' type="button" class="btn btn-primary" >toggle</button>
+        <button id='t3show' type="button" class="btn btn-primary" >show</button>
+        <button id='t3hide' type="button" class="btn btn-primary" >hide</button> -->
+        
+        <button type="button" class="btn btn-primary t3toggle" >toggle</button>
+        <button type="button" class="btn btn-primary t3show" >show</button>
+        <button type="button" class="btn btn-primary t3hide" >hide</button>        
+ 
+<div class="modal fade" id="exampleModal4JS" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="exampleModalLabel">New message</h4>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="form-group">
+            <label for="recipient-name" class="control-label">Recipient:</label>
+            <input type="text" class="form-control" id="recipient-name">
+          </div>
+          <div class="form-group">
+            <label for="message-text" class="control-label">Message:</label>
+            <textarea class="form-control" id="message-text"></textarea>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary t3toggle" >toggle</button>
+        <button type="button" class="btn btn-primary t3show" >show</button>
+        <button type="button" class="btn btn-primary t3hide" >hide</button>
+      </div>
+    </div>
+  </div>
+</div>
 			
 			</div>
 			<div class="col-md-4">
@@ -330,6 +367,60 @@ padding-bottom: 70px;
 				modal.find('.modal-title').text('New message to ' + recipient)
 				modal.find('.modal-body input').val(recipient)
 			})
+			
+			
+			$('#exampleModal4JS').on('loaded.bs.modal', function (e) {
+  				console.info('this is loaded.bs.modal event')
+			})			
+			
+			$('#exampleModal4JS').on('hide.bs.modal', function (e) {
+  				console.info('this is hide.bs.modal event')
+			})	
+			
+			$('#exampleModal4JS').on('hidden.bs.modal', function (e) {
+  				console.info('this is hidden.bs.modal event')
+			})
+			
+			$('#exampleModal4JS').on('show.bs.modal', function (e) {
+  				console.info('this is show.bs.modal event')
+			})
+			
+			$('#exampleModal4JS').on('shown.bs.modal', function (e) {
+  				console.info('this is shown.bs.modal event')
+			})			
+			
+			$('#changeheight').on('click', function (e) {
+  				console.info('this is changeheight click event')
+  				$('#exampleModal4JS').height(300);
+  				$('#exampleModal4JS').width(300);
+  				$('#exampleModal4JS').modal('handleUpdate');
+			});
+			
+			$('#t3init').on('click', function (e) {
+  				console.info('this is t3init click event');
+  				$('#exampleModal4JS').modal({
+  					backdrop:'static',
+  					keyboard: true,
+  					show:true
+  				});
+			});
+			
+			$('.t3toggle').on('click', function (e) {
+  				console.info('this is t3toggle click event');
+  				$('#exampleModal4JS').modal('toggle');
+			});
+			
+			$('.t3show').on('click', function (e) {
+  				console.info('this is t3show click event');
+  				$('#exampleModal4JS').modal('show');
+			});
+			
+			$('.t3hide').on('click', function (e) {
+  				console.info('this is t3hide click event');
+  				$('#exampleModal4JS').modal('hide');
+			});
+			
+			
 		</script>
 		
 </body>

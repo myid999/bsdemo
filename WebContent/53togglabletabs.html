@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="author" content="">
+
+<title>bsdemo</title>
+
+<link href="./css/bootstrap.min.css" rel="stylesheet">
+
+<style type="text/css">
+.container {
+	
+}
+
+div.row {
+	border-style: solid;
+	border-width: 1px;
+	/* margin-bottom:20px; */
+	/* background-color:#CECECE; */
+	padding: 30px 0;
+}
+
+div.row  div {
+/* 	border-style: solid;
+	border-width: 1px; */
+}
+
+
+body { 
+
+padding-top: 70px; 
+padding-bottom: 70px;
+
+}
+</style>
+
+</head>
+
+<body data-spy="scroll" data-target="#navbar-example2">
+
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+			
+			<h1>scrollspy</h1>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-12">
+<div>
+
+  <!-- Nav tabs -->
+  <ul class="nav nav-tabs" role="tablist">
+    <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Home</a></li>
+    <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Profile</a></li>
+    <li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">Messages</a></li>
+    <li role="presentation"><a href="#settings" aria-controls="settings" role="tab" data-toggle="tab">Settings</a></li>
+  </ul>
+
+  <!-- Tab panes -->
+  <div class="tab-content">
+    <div role="tabpanel" class="tab-pane active" id="home">home</div>
+    <div role="tabpanel" class="tab-pane" id="profile">profile</div>
+    <div role="tabpanel" class="tab-pane" id="messages">messages</div>
+    <div role="tabpanel" class="tab-pane" id="settings">settings</div>
+  </div>
+
+</div>
+
+			</div>			
+
+		</div>
+
+
+		<div class="row">
+			<div class="col-md-12">
+<div>
+
+  <!-- Nav tabs -->
+  <ul class="nav nav-pills" role="tablist">
+    <li role="presentation" class="active"><button class="btn but-default" data-target="#home2" aria-controls="home" data-toggle="pill" role="tab" >Home</button></li>
+    <li role="presentation"><button class="btn but-default" data-target="#profile2" aria-controls="profile" data-toggle="pill" role="tab" >Profile</button></li>
+    <li role="presentation"><button class="btn but-default" data-target="#messages2" aria-controls="messages" data-toggle="pill" role="tab" >Messages</button></li>
+    <li role="presentation"><button class="btn but-default" data-target="#settings2" aria-controls="settings" data-toggle="pill" role="tab" >Settings</button></li>
+  </ul>
+
+  <!-- Tab panes -->
+  <div class="tab-content">
+    <div role="tabpanel" class="tab-pane active" id="home2">home</div>
+    <div role="tabpanel" class="tab-pane" id="profile2">profile</div>
+    <div role="tabpanel" class="tab-pane" id="messages2">messages</div>
+    <div role="tabpanel" class="tab-pane" id="settings2">settings</div>
+  </div>
+
+</div>
+
+				
+			</div>		
+
+		</div>
+
+				<div class="row">
+			<div class="col-md-4">
+			
+
+			
+			</div>
+			<div class="col-md-4">
+
+			</div>			
+			<div class="col-md-4">
+
+
+			</div>
+		</div>
+				<div class="row">
+			<div class="col-md-4">
+ 		
+			
+			</div>
+			
+			<div class="col-md-4">
+		        <button type="button" class="btn btn-primary t3toggle1" >add content</button>
+		        <button type="button" class="btn btn-primary t3toggle2" >refresh</button>
+			</div>			
+			<div id="test4js3" class="col-md-4">
+
+			
+			
+			</div>
+		</div>
+
+				<div class="row">
+			<div class="col-md-4">
+
+			
+			</div>
+			<div class="col-md-4">
+
+			</div>			
+			<div class="col-md-4">
+
+			
+			
+			</div>
+		</div>
+				<div class="row">
+			<div class="col-md-4">
+
+			
+			</div>
+			<div class="col-md-4">
+
+			</div>			
+			<div class="col-md-4">
+
+			
+			
+			</div>
+		</div>
+
+				
+
+	</div>
+	
+		<script src="./js/jquery-1.11.3.js"></script>
+		<script src="./js/bootstrap.min.js"></script>
+		
+		<script type="text/javascript">
+
+		$(document).ready(function(){
+			console.info('this is $(document).ready ');
+			$('#navbar-example3-content').scrollspy({ target: '#navbar-example3' });
+			
+		});
+
+		
+		
+			
+			
+
+			
+		</script>
+		
+</body>
+</html>
