@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="author" content="">
+
+<title>bsdemo</title>
+
+<link href="./css/bootstrap.min.css" rel="stylesheet">
+
+<style type="text/css">
+.container {
+	
+}
+
+div.row {
+	border-style: solid;
+	border-width: 1px;
+	/* margin-bottom:20px; */
+	/* background-color:#CECECE; */
+	padding: 30px 0;
+}
+
+div.row  div {
+/* 	border-style: solid;
+	border-width: 1px; */
+}
+
+
+body { 
+
+padding-top: 70px; 
+padding-bottom: 70px;
+
+}
+</style>
+
+</head>
+
+<body data-spy="scroll" data-target="#navbar-example2">
+
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+			
+			<h1>tool tips</h1>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-6">
+			
+<a class="btn btn-primary" role="button" data-toggle="collapse" href="#collapseExample" 
+aria-expanded="false" aria-controls="collapseExample">
+  Link with href
+</a>
+<button class="btn btn-primary" type="button" data-toggle="collapse" 
+data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+  Button with data-target
+</button>
+
+<div class="collapse" id="collapseExample">
+  <div class="well">
+     Button with data-target content, Button with data-target content, Button with data-target content
+  </div>
+</div>
+			</div>			
+
+			<div class="col-md-6">
+<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+  <div class="panel panel-default">
+    <div class="panel-heading" role="tab" id="headingOne">
+      <h4 class="panel-title">
+        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+          Collapsible Group Item #1
+        </a>
+      </h4>
+    </div>
+    <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+      <div class="panel-body">
+        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+      </div>
+    </div>
+  </div>
+  <div class="panel panel-default">
+    <div class="panel-heading" role="tab" id="headingTwo">
+      <h4 class="panel-title">
+        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+          Collapsible Group Item #2
+        </a>
+      </h4>
+    </div>
+    <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+      <div class="panel-body">
+        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+      </div>
+    </div>
+  </div>
+  <div class="panel panel-default">
+    <div class="panel-heading" role="tab" id="headingThree">
+      <h4 class="panel-title">
+        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+          Collapsible Group Item #3
+        </a>
+      </h4>
+    </div>
+    <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+      <div class="panel-body">
+        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+      </div>
+    </div>
+  </div>
+</div>
+			</div>	
+		</div>
+
+
+		<div class="row">
+			<div class="col-md-12">
+
+			</div>		
+
+		</div>
+
+				<div class="row">
+			<div class="col-md-6">
+				<div class="panel-group" role="tablist">
+					<div class="panel panel-default">
+						<div class="panel-heading" role="tab"
+							id="collapseListGroupHeading1">
+							<h4 class="panel-title">
+								<a class="" role="button" data-toggle="collapse"
+									href="#collapseListGroup1" aria-expanded="true"
+									aria-controls="collapseListGroup1"> Collapsible list group
+								</a>
+							</h4>
+						</div>
+						<div id="collapseListGroup1" class="panel-collapse collapse in"
+							role="tabpanel" aria-labelledby="collapseListGroupHeading1"
+							aria-expanded="true">
+							<ul class="list-group">
+								<li class="list-group-item">Bootply</li>
+								<li class="list-group-item">One itmus ac facilin</li>
+								<li class="list-group-item">Second eros</li>
+							</ul>
+							<div class="panel-footer">Footer</div>
+						</div>
+					</div>
+				</div>
+
+
+
+			</div>
+			<div class="col-md-6">
+
+			</div>			
+		</div>
+				<div class="row">
+			<div class="col-md-4">
+ 		
+			
+			</div>
+			
+			<div class="col-md-4">
+			</div>			
+			<div id="test4js3" class="col-md-4">
+
+			
+			
+			</div>
+		</div>
+
+				<div class="row">
+			<div class="col-md-4">
+
+			
+			</div>
+			<div class="col-md-4">
+
+			</div>			
+			<div class="col-md-4">
+
+			
+			
+			</div>
+		</div>
+				<div class="row">
+			<div class="col-md-4">
+
+			
+			</div>
+			<div class="col-md-4">
+
+			</div>			
+			<div class="col-md-4">
+
+			
+			
+			</div>
+		</div>
+
+				
+
+	</div>
+	
+		<script src="./js/jquery-1.11.3.js"></script>
+		<script src="./js/bootstrap.min.js"></script>
+		
+		<script type="text/javascript">
+
+		$(document).ready(function(){
+			console.info('this is $(document).ready ');
+			//$('#navbar-example3-content').scrollspy({ target: '#navbar-example3' });
+			/*
+			var version = $.fn.tab.Constructor.VERSION
+			console.info('test.VERSION: '+version);
+			
+			var bootstrapTab = $.fn.tab.noConflict();
+			var bootstrapTabCons = bootstrapTab.Constructor;
+			*/
+			
+			  $('#myButton').on('click', function () {
+				    var $btn = $(this).button('loading');
+				    // business logic...
+				   // $btn.button('reset');
+				    console.info('myButton loading');
+				  });
+			
+			  $('.t3toggle1').on('click', function () {
+				   
+				    $('#myButton').button('reset');
+				    console.info('myButton reset');
+				  });			
+			
+			  $('#myButton2').on('click', function () {
+				    var $btn = $(this).button('completett');
+				    // business logic...
+				   // $btn.button('reset');
+				    console.info('myButton completett');
+				  });
+			
+			  $('.t3toggle2').on('click', function () {
+				   
+				    $('#myButton2').button('reset');
+				    console.info('myButton reset');
+				  });	
+			
+		});
+
+		$(function () {
+			$('[data-toggle="popover"]').popover()
+		});
+
+			
+			
+
+			
+		</script>
+		
+</body>
+</html>
